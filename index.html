@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Kiki ❤️</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to bottom, #0b1a2a, #1f3b5c);
+        color: white;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        color: #ff4b5c;
+    }
+
+    .spiderman {
+        font-size: 4em;
+        animation: swing 2s infinite alternate ease-in-out;
+    }
+
+    @keyframes swing {
+        from { transform: rotate(-10deg); }
+        to { transform: rotate(10deg); }
+    }
+
+    .letter {
+        margin-top: 30px;
+        font-size: 1.2em;
+        line-height: 1.8;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(255,255,255,0.05);
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    button {
+        margin-top: 30px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 25px;
+        background: #ff4b5c;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ff1f3d;
+    }
+
+    .hidden-message {
+        display: none;
+        margin-top: 20px;
+        font-size: 1.1em;
+        color: #ffd1d6;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 0.9em;
+        opacity: 0.7;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="spiderman">🕷️</div>
+    <h1>Hey Kiki...</h1>
+
+    <div class="letter">
+        I’ve been doing a lot of thinking… and I need to say this properly. <br><br>
+
+        I’m really sorry for acting weird. I know you felt it, even if I didn’t say it out loud.  
+        And the truth is… you didn’t deserve that version of me. <br><br>
+
+        Sometimes even Spider-Man gets tangled in his own web, overthinking, messing up, not knowing how to act…  
+        but one thing he never stops doing is protecting what matters to him. <br><br>
+
+        And Kiki… that’s you. ❤️ <br><br>
+
+        I love you. Not in a loud, temporary way… but in a quiet, real, stays-with-you kind of way.  
+        The kind that doesn’t run, even when things get confusing. <br><br>
+
+        I know I’m not perfect. I might act off sometimes, get in my head, or handle things the wrong way…  
+        but if there’s one thing I’m sure about, it’s that I never want to lose you. <br><br>
+
+        You mean more to me than I sometimes know how to show…  
+        but I’m here, trying, learning, and choosing you every time. <br><br>
+
+        — Your Spider-Man 🕷️
+    </div>
+
+    <button onclick="showMessage()">Tap this when you miss me</button>
+
+    <div class="hidden-message" id="hiddenMessage">
+        Even on my worst days… it’s still you.  
+        Still your smile, your voice, your presence that I want.  
+        I’m not going anywhere, Kiki. ❤️
+    </div>
+
+    <footer>
+        Made with love (and a little web-slinging 🕸️)
+    </footer>
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("hiddenMessage").style.display = "block";
+}
+</script>
+
+</body>
+</html>
